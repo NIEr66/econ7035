@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | MindWell</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="../index.html">MindWell</a>
+      </div>
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="contribute.html">Contribute Data</a>
+        <a href="about.html">About</a>
+      </nav>
+      <a href="#" class="cta-button">My Account</a>
+    </div>
+  </header>
+
+  <!-- Dashboard Header -->
+  <section class="dashboard-header">
+    <div class="container">
+      <div class="dashboard-welcome animate-fade-in">
+        <h1>Welcome back, Alex</h1>
+        <p>Here's an overview of your progress and activity.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dashboard Overview -->
+  <section class="dashboard-overview">
+    <div class="container">
+      <div class="dashboard-stats">
+        <div class="stat-card animate-fade-in">
+          <div class="stat-icon">
+            <i class="fas fa-coins"></i>
+          </div>
+          <div class="stat-number">750</div>
+          <div class="stat-label">Health Points</div>
+        </div>
+        
+        <div class="stat-card animate-fade-in">
+          <div class="stat-icon">
+            <i class="fas fa-dollar-sign"></i>
+          </div>
+          <div class="stat-number">$350</div>
+          <div class="stat-label">Total Savings</div>
+        </div>
+        
+        <div class="stat-card animate-fade-in">
+          <div class="stat-icon">
+            <i class="fas fa-upload"></i>
+          </div>
+          <div class="stat-number">12</div>
+          <div class="stat-label">Data Contributions</div>
+        </div>
+        
+        <div class="stat-card animate-fade-in">
+          <div class="stat-icon">
+            <i class="fas fa-calendar-check"></i>
+          </div>
+          <div class="stat-number">4</div>
+          <div class="stat-label">Sessions Completed</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Health Points Section -->
+  <section class="health-points-section">
+    <div class="container">
+      <h2 class="section-title animate-fade-in">Your Health Points</h2>
+      
+      <div class="points-container animate-fade-in">
+        <div class="points-header">
+          <h3 class="points-title">Current Balance</h3>
+          <div class="points-total">750</div>
+        </div>
+        
+        <div class="points-progress">
+          <div class="points-bar" style="width: 0%"></div>
+        </div>
+        
+        <div class="points-goal">
+          <span>0</span>
+          <span>Goal: 1,000 points</span>
+        </div>
+        
+        <div class="points-milestones">
+          <h4>Redeem Your Points</h4>
+          <div class="milestone">
+            <div class="milestone-info">
+              <div class="milestone-title">10% Off Next Consultation</div>
+              <div class="milestone-points">500 points</div>
+            </div>
+            <button class="milestone-button" disabled>Redeemed</button>
+          </div>
+          
+          <div class="milestone">
+            <div class="milestone-info">
+              <div class="milestone-title">Free Follow-up Session</div>
+              <div class="milestone-points">800 points</div>
+            </div>
+            <button class="milestone-button">Redeem</button>
+          </div>
+          
+          <div class="milestone">
+            <div class="milestone-info">
+              <div class="milestone-title">20% Off Medication</div>
+              <div class="milestone-points">1,000 points</div>
+            </div>
+            <button class="milestone-button secondary">Lock (Need 250 more)</button>
+          </div>
+          
+          <div class="milestone">
+            <div class="milestone-info">
+              <div class="milestone-title">Premium Care Package</div>
+              <div class="milestone-points">2,500 points</div>
+            </div>
+            <button class="milestone-button secondary">Locked</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="points-history animate-fade-in">
+        <h3>Points History</h3>
+        <div class="history-list">
+          <div class="history-item">
+            <div class="history-info">
+              <div class="history-title">Daily Mood Tracker</div>
+              <div class="history-date">April 18, 2025</div>
+            </div>
+            <div class="history-points">+25 points</div>
+          </div>
+          
+          <div class="history-item">
+            <div class="history-info">
+              <div class="history-title">Therapy Session Feedback</div>
+              <div class="history-date">April 15, 2025</div>
+            </div>
+            <div class="history-points">+50 points</div>
+          </div>
+          
+          <div class="history-item">
+            <div class="history-info">
+              <div class="history-title">Voice Journal Entry</div>
+              <div class="history-date">April 12, 2025</div>
+            </div>
+            <div class="history-points">+35 points</div>
+          </div>
+          
+          <div class="history-item">
+            <div class="history-info">
+              <div class="history-title">10% Discount Redemption</div>
+              <div class="history-date">April 10, 2025</div>
+            </div>
+            <div class="history-points red">-500 points</div>
+          </div>
+          
+          <div class="history-item">
+            <div class="history-info">
+              <div class="history-title">Monthly Assessment</div>
+              <div class="history-date">April 5, 2025</div>
+            </div>
+            <div class="history-points">+100 points</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Treatment Progress Section -->
+  <section class="treatment-progress">
+    <div class="container">
+      <h2 class="section-title animate-fade-in">Your Treatment Journey</h2>
+      
+      <div class="treatment-timeline animate-fade-in">
+        <div class="timeline-item complete">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Initial Assessment</h3>
+            <p>Completed on March 25, 2025</p>
+            <div class="timeline-details">
+              <div class="timeline-detail">
+                <strong>AI Severity Score:</strong> 12/20 (Moderate)
+              </div>
+              <div class="timeline-detail">
+                <strong>Recommended Action:</strong> Cognitive Behavioral Therapy
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item complete">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Therapist Matching</h3>
+            <p>Completed on March 28, 2025</p>
+            <div class="timeline-details">
+              <div class="timeline-detail">
+                <strong>Matched With:</strong> Dr. Sarah Johnson, Riverside Clinic
+              </div>
+              <div class="timeline-detail">
+                <strong>Specialization:</strong> CBT, Depression, Anxiety
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item complete">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>First Session</h3>
+            <p>Completed on April 3, 2025</p>
+            <div class="timeline-details">
+              <div class="timeline-detail">
+                <strong>Session Notes:</strong> <a href="#">View Summary</a>
+              </div>
+              <div class="timeline-detail">
+                <strong>Next Steps:</strong> Weekly CBT sessions, Daily mood tracking
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item active">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Ongoing Treatment</h3>
+            <p>In progress</p>
+            <div class="timeline-details">
+              <div class="timeline-detail">
+                <strong>Current Focus:</strong> Identifying negative thought patterns
+              </div>
+              <div class="timeline-detail">
+                <strong>Next Session:</strong> April 24, 2025 (3 days from now)
+              </div>
+              <div class="timeline-actions">
+                <a href="#" class="timeline-action">Reschedule</a>
+                <a href="#" class="timeline-action">Prepare Notes</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Progress Review</h3>
+            <p>Scheduled for May 15, 2025</p>
+            <div class="timeline-details">
+              <div class="timeline-detail">
+                <strong>Type:</strong> Comprehensive evaluation with therapist and AI assessment
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Data Contribution Section -->
+  <section class="data-contribution">
+    <div class="container">
+      <h2 class="section-title animate-fade-in">Your Data Contributions</h2>
+      
+      <div class="contribution-stats animate-fade-in">
+        <div class="contrib-stat">
+          <div class="contrib-value">12</div>
+          <div class="contrib-label">Total Contributions</div>
+        </div>
+        
+        <div class="contrib-stat">
+          <div class="contrib-value">4</div>
+          <div class="contrib-label">Research Projects Supported</div>
+        </div>
+        
+        <div class="contrib-stat">
+          <div class="contrib-value">315</div>
+          <div class="contrib-label">Points Earned from Data</div>
+        </div>
+      </div>
+      
+      <div class="data-security animate-fade-in">
+        <h3>Data Security Status</h3>
+        <div class="security-info">
+          <div class="security-item">
+            <div class="security-icon secure">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="security-detail">
+              <div class="security-title">All data desensitized</div>
+              <div class="security-description">Personal identifiers automatically removed</div>
+            </div>
+          </div>
+          
+          <div class="security-item">
+            <div class="security-icon secure">
+              <i class="fas fa-lock"></i>
+            </div>
+            <div class="security-detail">
+              <div class="security-title">Blockchain tracking active</div>
+              <div class="security-description">12 access records in ledger</div>
+            </div>
+          </div>
+          
+          <div class="security-item">
+            <div class="security-icon secure">
+              <i class="fas fa-user-shield"></i>
+            </div>
+            <div class="security-detail">
+              <div class="security-title">Consent preferences up to date</div>
+              <div class="security-description">Last updated: April 10, 2025</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="quick-actions animate-fade-in">
+        <h3>Quick Actions</h3>
+        <div class="action-buttons">
+          <a href="contribute.html" class="action-button">
+            <i class="fas fa-plus"></i>
+            <span>Add New Data</span>
+          </a>
+          
+          <a href="#" class="action-button">
+            <i class="fas fa-sliders-h"></i>
+            <span>Manage Consent</span>
+          </a>
+          
+          <a href="#" class="action-button">
+            <i class="fas fa-file-alt"></i>
+            <span>View Access Log</span>
+          </a>
+          
+          <a href="#" class="action-button">
+            <i class="fas fa-calendar-alt"></i>
+            <span>Schedule Session</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Personalized Insights Section -->
+  <section class="personalized-insights">
+    <div class="container">
+      <h2 class="section-title animate-fade-in">AI Insights</h2>
+      <p class="section-subtitle animate-fade-in">Personalized insights based on your data to help you on your journey.</p>
+      
+      <div class="insights-container animate-fade-in">
+        <div class="insight-card">
+          <div class="insight-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="insight-content">
+            <h3>Mood Trend Analysis</h3>
+            <p>Your mood scores have improved by 18% over the past 4 weeks, indicating positive progress with your current treatment plan.</p>
+            <a href="#" class="insight-link">See detailed analysis</a>
+          </div>
+        </div>
+        
+        <div class="insight-card">
+          <div class="insight-icon">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <div class="insight-content">
+            <h3>Behavioral Pattern</h3>
+            <p>Our AI has detected a correlation between your sleep quality and mood. Consider tracking your sleep more closely and discussing this with your therapist.</p>
+            <a href="#" class="insight-link">Get sleep improvement tips</a>
+          </div>
+        </div>
+        
+        <div class="insight-card">
+          <div class="insight-icon">
+            <i class="fas fa-calendar-day"></i>
+          </div>
+          <div class="insight-content">
+            <h3>Upcoming Challenge</h3>
+            <p>Based on your past patterns, next week may be challenging. We've prepared some preemptive coping strategies to help you navigate this period.</p>
+            <a href="#" class="insight-link">View coping strategies</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="dashboard-cta">
+    <div class="container">
+      <div class="cta-content animate-fade-in">
+        <h2>Ready to contribute more data?</h2>
+        <p>Share your experiences to earn more health points and help advance depression research.</p>
+        <a href="contribute.html" class="cta-button">Contribute Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>MindWell</h3>
+          <p>Revolutionizing depression treatment through technology, transparency, and community.</p>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="contribute.html">Contribute Data</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Resources</h3>
+          <ul class="footer-links">
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="data-policy.html">Data Policy</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Connect</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <p>Subscribe to our newsletter for the latest updates and mental health resources.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address">
+            <button type="submit"><i class="fas fa-arrow-right"></i></button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 MindWell. All rights reserved. <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html> 

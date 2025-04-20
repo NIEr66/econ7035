@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contribute Data | MindWell</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="../index.html">MindWell</a>
+      </div>
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="contribute.html" class="active">Contribute Data</a>
+        <a href="about.html">About</a>
+      </nav>
+      <a href="#" class="cta-button">My Account</a>
+    </div>
+  </header>
+
+  <!-- Contribute Header -->
+  <section class="contribute-header">
+    <div class="container">
+      <div class="contribute-intro animate-fade-in">
+        <h1>Contribute Your Data</h1>
+        <p>Share your experiences to earn health points, receive better insights, and help advance depression research.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Your Impact Section -->
+  <section class="your-impact">
+    <div class="container">
+      <h2 class="section-title animate-fade-in">Your Impact</h2>
+      <p class="section-subtitle animate-fade-in">See how your data contributions make a difference.</p>
+      
+      <div class="impact-stats animate-fade-in">
+        <div class="impact-stat">
+          <div class="impact-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="impact-number">12,487</div>
+          <div class="impact-label">Community Members</div>
+        </div>
+        
+        <div class="impact-stat">
+          <div class="impact-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <div class="impact-number">85,642</div>
+          <div class="impact-label">Data Points Collected</div>
+        </div>
+        
+        <div class="impact-stat">
+          <div class="impact-icon">
+            <i class="fas fa-flask"></i>
+          </div>
+          <div class="impact-number">24</div>
+          <div class="impact-label">Research Studies</div>
+        </div>
+        
+        <div class="impact-stat">
+          <div class="impact-icon">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <div class="impact-number">8</div>
+          <div class="impact-label">New Treatments Developed</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contribute Options Section -->
+  <section class="contribute-options">
+    <div class="container">
+      <h2 class="section-title animate-fade-in">Ways to Contribute</h2>
+      <p class="section-subtitle animate-fade-in">Choose how you want to share your experiences and earn health points.</p>
+      
+      <div class="contribute-tabs animate-fade-in">
+        <div class="tab-buttons">
+          <button class="tab-button active" data-tab="mood">Mood Tracker</button>
+          <button class="tab-button" data-tab="journal">Voice/Text Journal</button>
+          <button class="tab-button" data-tab="feedback">Treatment Feedback</button>
+          <button class="tab-button" data-tab="assessment">Self-Assessment</button>
+        </div>
+        
+        <div class="tab-content">
+          <!-- Mood Tracker Tab -->
+          <div class="tab-pane active" id="mood-tab">
+            <div class="tab-header">
+              <h3>Daily Mood Tracker</h3>
+              <div class="points-badge">+25 points</div>
+            </div>
+            
+            <p class="tab-description">Track your mood and emotional state. This takes just a minute and provides valuable data for your treatment.</p>
+            
+            <form class="mood-form">
+              <div class="form-group">
+                <label>How are you feeling today?</label>
+                <div class="mood-slider">
+                  <input type="range" min="1" max="10" value="5" class="slider" id="mood-range">
+                  <div class="slider-labels">
+                    <span>Very Low</span>
+                    <span>Neutral</span>
+                    <span>Very Good</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label>What emotions are you experiencing? (Select all that apply)</label>
+                <div class="emotion-grid">
+                  <div class="emotion-checkbox">
+                    <input type="checkbox" id="emotion-1">
+                    <label for="emotion-1">Joy</label>
+                  </div>
+                  <div class="emotion-checkbox">
+                    <input type="checkbox" id="emotion-2">
+                    <label for="emotion-2">Sadness</label>
+                  </div>
+                  <div class="emotion-checkbox">
+                    <input type="checkbox" id="emotion-3">
+                    <label for="emotion-3">Anxiety</label>
+                  </div>
+                  <div class="emotion-checkbox">
+                    <input type="checkbox" id="emotion-4">
+                    <label for="emotion-4">Anger</label>
+                  </div>
+                  <div class="emotion-checkbox">
+                    <input type="checkbox" id="emotion-5">
+                    <label for="emotion-5">Fear</label>
+                  </div>
+                  <div class="emotion-checkbox">
+                    <input type="checkbox" id="emotion-6">
+                    <label for="emotion-6">Hope</label>
+                  </div>
+                  <div class="emotion-checkbox">
+                    <input type="checkbox" id="emotion-7">
+                    <label for="emotion-7">Guilt</label>
+                  </div>
+                  <div class="emotion-checkbox">
+                    <input type="checkbox" id="emotion-8">
+                    <label for="emotion-8">Contentment</label>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label>Did you take your medication today?</label>
+                <div class="radio-options">
+                  <div class="radio-option">
+                    <input type="radio" id="med-yes" name="medication">
+                    <label for="med-yes">Yes</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="med-no" name="medication">
+                    <label for="med-no">No</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="med-na" name="medication">
+                    <label for="med-na">Not applicable</label>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label>Anything else you'd like to note about today?</label>
+                <textarea rows="3" placeholder="Optional additional notes"></textarea>
+              </div>
+              
+              <button type="submit" class="cta-button full-width">Submit Mood Report</button>
+            </form>
+          </div>
+          
+          <!-- Journal Tab -->
+          <div class="tab-pane" id="journal-tab">
+            <div class="tab-header">
+              <h3>Voice or Text Journal</h3>
+              <div class="points-badge">+35 points</div>
+            </div>
+            
+            <p class="tab-description">Record your thoughts, experiences, and feelings. Our AI will analyze your entries to provide personalized insights while protecting your privacy.</p>
+            
+            <div class="journal-options">
+              <div class="journal-option">
+                <div class="option-header">
+                  <i class="fas fa-microphone"></i>
+                  <h4>Voice Journal</h4>
+                </div>
+                <p>Record a voice entry about your day or current thoughts.</p>
+                <div class="voice-recorder">
+                  <button class="recorder-button">
+                    <i class="fas fa-microphone"></i>
+                    <span>Start Recording</span>
+                  </button>
+                  <div class="recorder-timer">00:00</div>
+                </div>
+                <div class="recorder-controls">
+                  <button class="control-button" disabled>
+                    <i class="fas fa-pause"></i>
+                  </button>
+                  <button class="control-button" disabled>
+                    <i class="fas fa-stop"></i>
+                  </button>
+                  <button class="control-button" disabled>
+                    <i class="fas fa-save"></i>
+                  </button>
+                </div>
+              </div>
+              
+              <div class="journal-option">
+                <div class="option-header">
+                  <i class="fas fa-pencil-alt"></i>
+                  <h4>Text Journal</h4>
+                </div>
+                <p>Write your thoughts and feelings in a text entry.</p>
+                <div class="form-group">
+                  <label>Journal Title</label>
+                  <input type="text" placeholder="Give your entry a title">
+                </div>
+                <div class="form-group">
+                  <label>Your Entry</label>
+                  <textarea rows="8" placeholder="Write your thoughts here..."></textarea>
+                </div>
+                <button class="cta-button full-width">Save Journal Entry</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Treatment Feedback Tab -->
+          <div class="tab-pane" id="feedback-tab">
+            <div class="tab-header">
+              <h3>Treatment Feedback</h3>
+              <div class="points-badge">+50 points</div>
+            </div>
+            
+            <p class="tab-description">Share feedback about your therapy sessions, medication, or other treatment aspects to help improve care quality.</p>
+            
+            <form class="feedback-form">
+              <div class="form-group">
+                <label>What treatment are you providing feedback on?</label>
+                <select>
+                  <option>Select treatment type</option>
+                  <option>Therapy Session (April 17, 2025)</option>
+                  <option>Medication: Fluoxetine 20mg</option>
+                  <option>Group Support Session</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label>How would you rate the effectiveness?</label>
+                <div class="rating-stars">
+                  <div class="star" data-value="1"><i class="far fa-star"></i></div>
+                  <div class="star" data-value="2"><i class="far fa-star"></i></div>
+                  <div class="star" data-value="3"><i class="far fa-star"></i></div>
+                  <div class="star" data-value="4"><i class="far fa-star"></i></div>
+                  <div class="star" data-value="5"><i class="far fa-star"></i></div>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label>What aspects were most helpful?</label>
+                <textarea rows="3" placeholder="Share what worked well for you"></textarea>
+              </div>
+              
+              <div class="form-group">
+                <label>What aspects could be improved?</label>
+                <textarea rows="3" placeholder="Share any suggestions for improvement"></textarea>
+              </div>
+              
+              <div class="form-group">
+                <label>Did you experience any side effects or challenges?</label>
+                <textarea rows="3" placeholder="Describe any side effects or difficulties"></textarea>
+              </div>
+              
+              <div class="form-group">
+                <label>Would you like to share this feedback with your healthcare provider?</label>
+                <div class="checkbox-option">
+                  <input type="checkbox" id="share-provider">
+                  <label for="share-provider">Yes, share with my provider</label>
+                </div>
+              </div>
+              
+              <button type="submit" class="cta-button full-width">Submit Feedback</button>
+            </form>
+          </div>
+          
+          <!-- Self-Assessment Tab -->
+          <div class="tab-pane" id="assessment-tab">
+            <div class="tab-header">
+              <h3>Monthly Self-Assessment</h3>
+              <div class="points-badge">+100 points</div>
+            </div>
+            
+            <p class="tab-description">Complete a comprehensive assessment of your mental health. This helps track your progress over time and adjust your treatment plan as needed.</p>
+            
+            <div class="assessment-info">
+              <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <span>Takes approximately 15 minutes</span>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Available once per month</span>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-lock"></i>
+                <span>Your responses are confidential</span>
+              </div>
+            </div>
+            
+            <div class="assessment-preview">
+              <h4>The assessment includes questions about:</h4>
+              <ul class="assessment-topics">
+                <li>Mood and emotional state over the past month</li>
+                <li>Sleep quality and patterns</li>
+                <li>Energy levels and motivation</li>
+                <li>Social interactions and relationships</li>
+                <li>Treatment adherence and side effects</li>
+                <li>Coping strategies and self-care practices</li>
+              </ul>
+            </div>
+            
+            <div class="assessment-cta">
+              <p>Your last assessment was completed on April 5, 2025.</p>
+              <p>You can take your next assessment on May 5, 2025 (15 days from now).</p>
+              <button class="cta-button full-width secondary" disabled>Assessment Available in 15 Days</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Data Security Section -->
+  <section class="data-security-section">
+    <div class="container">
+      <div class="security-content animate-fade-in">
+        <div class="security-image">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <div class="security-info">
+          <h2>Your Data is Protected</h2>
+          <p>We prioritize your privacy and ensure the security of your information through:</p>
+          <ul class="security-features">
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span>Automatic voice/video desensitization to remove personal identifiers</span>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span>Blockchain technology to track data access and usage</span>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span>Anonymized data sharing with approved research partners</span>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span>Granular consent controls for how your data is used</span>
+            </li>
+          </ul>
+          <a href="data-policy.html" class="learn-more">Learn more about our data policy</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Impact Section -->
+  <section class="research-impact">
+    <div class="container">
+      <h2 class="section-title animate-fade-in">Research Impact</h2>
+      <p class="section-subtitle animate-fade-in">Your contributions help advance depression research and treatment innovations.</p>
+      
+      <div class="research-projects animate-fade-in">
+        <div class="research-project">
+          <div class="project-badge">Active Research</div>
+          <h3 class="project-title">Personalized Depression Treatment Algorithms</h3>
+          <p class="project-institution">Stanford University Medical Center</p>
+          <p class="project-description">Using patient data to develop AI algorithms that predict which treatment approaches will be most effective for individual patients based on their unique symptom patterns.</p>
+          <div class="project-stats">
+            <div class="project-stat">
+              <div class="stat-value">8,452</div>
+              <div class="stat-label">Contributors</div>
+            </div>
+            <div class="project-stat">
+              <div class="stat-value">73%</div>
+              <div class="stat-label">Progress</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="research-project">
+          <div class="project-badge">New Study</div>
+          <h3 class="project-title">Digital Biomarkers of Depression</h3>
+          <p class="project-institution">Mayo Clinic Research</p>
+          <p class="project-description">Identifying digital biomarkers in voice recordings, text entries, and activity patterns that can help detect early signs of depression onset or relapse.</p>
+          <div class="project-stats">
+            <div class="project-stat">
+              <div class="stat-value">3,294</div>
+              <div class="stat-label">Contributors</div>
+            </div>
+            <div class="project-stat">
+              <div class="stat-value">28%</div>
+              <div class="stat-label">Progress</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="research-project">
+          <div class="project-badge">Completed</div>
+          <h3 class="project-title">Efficacy of Combined AI and Human Therapy</h3>
+          <p class="project-institution">National Institute of Mental Health</p>
+          <p class="project-description">Study found that patients receiving both AI-guided assessment and human therapy showed 37% greater improvement than those receiving traditional therapy alone.</p>
+          <div class="project-results">
+            <a href="#" class="results-link">View Research Paper</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="contribute-cta">
+    <div class="container">
+      <div class="cta-content animate-fade-in">
+        <h2>Ready to make a difference?</h2>
+        <p>Start contributing your data today to earn health points and help improve mental healthcare for everyone.</p>
+        <a href="#" class="cta-button">Get Started</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>MindWell</h3>
+          <p>Revolutionizing depression treatment through technology, transparency, and community.</p>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="contribute.html">Contribute Data</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Resources</h3>
+          <ul class="footer-links">
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="data-policy.html">Data Policy</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Connect</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <p>Subscribe to our newsletter for the latest updates and mental health resources.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address">
+            <button type="submit"><i class="fas fa-arrow-right"></i></button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 MindWell. All rights reserved. <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    // Tab switching functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const tabButtons = document.querySelectorAll('.tab-button');
+      const tabPanes = document.querySelectorAll('.tab-pane');
+      
+      tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // Remove active class from all buttons and panes
+          tabButtons.forEach(btn => btn.classList.remove('active'));
+          tabPanes.forEach(pane => pane.classList.remove('active'));
+          
+          // Add active class to clicked button
+          button.classList.add('active');
+          
+          // Show corresponding tab pane
+          const tabId = button.getAttribute('data-tab');
+          document.getElementById(`${tabId}-tab`).classList.add('active');
+        });
+      });
+      
+      // Star rating functionality
+      const stars = document.querySelectorAll('.star');
+      
+      stars.forEach(star => {
+        star.addEventListener('click', () => {
+          const value = star.getAttribute('data-value');
+          
+          // Reset all stars
+          stars.forEach(s => {
+            s.innerHTML = '<i class="far fa-star"></i>';
+          });
+          
+          // Fill in stars up to the selected one
+          for (let i = 0; i < value; i++) {
+            stars[i].innerHTML = '<i class="fas fa-star"></i>';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html> 
